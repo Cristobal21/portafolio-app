@@ -1,0 +1,25 @@
+
+.container-home {
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.header-home {
+  --animate-duration: 2s;
+  text-align: center;
+}
+
+.header-home h1 {
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.header-home h3 {
+  font-size: clamp(20px, 8vw, 60px);
+  color: #64ffda;
+}

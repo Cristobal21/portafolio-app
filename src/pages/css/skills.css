@@ -1,0 +1,45 @@
+.container-skills {
+  padding-bottom: 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-skills{
+  display: flex;
+  justify-content: center;
+}
+
+.card-skill {
+  width: 8rem;
+}
+
+.row-card-skill {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  row-gap: 2rem;
+}
+
+img {
+  width: 8rem;
+  height: 7rem;
+  transition: .2s;
+}
+
+.card-skill img:hover {
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+
+a {
+  text-decoration: none;
+  color: #8892b0;
+}
+
+
+
+

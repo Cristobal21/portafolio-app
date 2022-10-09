@@ -1,0 +1,104 @@
+/* Contact component */
+.container-contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+}
+
+.container-social {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.text-input {
+  color: #fff;
+  opacity: 0.3;
+}
+
+
+
+
+/* ContactForm component */
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 2rem;
+  background-color: transparent;
+  width: 600px;
+}
+
+.alerta-error {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: .875em;
+  color: #dc3545;
+}
+
+.button-submit-contact {
+  background-color: transparent;
+  text-decoration: none;
+  color: #64ffda;
+  border: 1px solid #64ffda;
+  text-align: center;
+}
+
+.button-submit-contact:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  border: 1px solid #64ffda;
+}
+
+.button-submit-contact:focus {
+  background-color: rgba(100, 255, 219, 0.041);
+  color: #64ffda;
+  border: 1px solid #64ffda;
+}
+
+textarea {
+  resize: none;
+}
+
+.container-loader {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* SocialMediaNetwork component */
+.card-body-contact {
+  padding: 3px;
+  height: 5rem;
+  width: 5rem;
+  transition: .4s;
+}
+
+.card-body-contact:hover {
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+
+.card-social-icon {
+  width: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* Media queries */
+@media (max-width: 500px) {
+  .formulario {
+    width: 90%;
+  }
+}

@@ -1,0 +1,102 @@
+.container-about {
+  height: 100vh;
+}
+
+.row-about {
+  margin: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.row-header {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.row-text {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10rem;
+}
+
+.row-header header {
+  margin-bottom: 15px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.row-header hr {
+  width: 10%;
+}
+
+.row-skills {
+  display: flex;
+  justify-content: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10rem;
+}
+
+.row-courses {
+  padding-top: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  row-gap: 1rem;
+}
+
+.row-buttons-footer {
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem;
+}
+
+
+
+/* ************************** */
+/* MEDIA QUERIES */
+/* ************************** */
+
+
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+  .col-text {
+    width: 50%;
+  }
+
+  .col-img {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .col-perfil {
+    width: 52%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+  .col-perfil {
+    width: 82%;
+  }
+}
