@@ -9,7 +9,11 @@
 }
 
 .navs a {
-  color: #64ffda;
+  color: #00FFFF;
+}
+
+.navs a:hover {
+  color: #FFFFFF;
 }
 
 .nav1 {

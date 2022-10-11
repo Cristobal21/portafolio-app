@@ -1,26 +1,44 @@
 
 /* Button CV *************************************/
 .button-cv {
-  color: #64ffda;
+  color: #00FFFF;
   background-color: transparent;
-  border: 1px solid #64ffda;
+  border: 1px solid #00FFFF;
   border-radius: 4px;
-  padding: 1.25rem 1.75rem;
-  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  padding: 1.25rem 4.75rem;
+  font-family: 'Cutive Mono', monospace;
   line-height: 1;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .button-cv:hover {
-  transition-duration: 0.4s;
-  background-color: rgba(100,255,218,0.1);
-  color: #64ffda;
+  transition-duration: 0.5s;
+  animation: ease-out;
+  background-color: #FF0080;
+  opacity: 0.99;
+  color: #FFFFFF;
+  border: #FF0080;
+}
+
+.container-buttonCV {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-buttonCV hr {
+  height: 30vh;
+  width: 1px;
+  border-width: 0;
+  color: #00FFFF;
+  background-color: #00FFFF;
+  margin-top: 0;
 }
 
 
-
 /* Link about *************************************/
-.container-links {
+/* .container-links {
   display: flex;
   max-width: 80%;
   width: 100%;
@@ -44,12 +62,12 @@
 .link:hover {
   background-color: rgba(100,255,218,0.1);
   color: #64ffda;
-}
+} */
 
 
 
 /* Link nav footer *************************************/
-.container-links-footer {
+/* .container-links-footer {
   display: flex;
   justify-content: center;
   column-gap: 1rem;
@@ -76,7 +94,7 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 10px;
-}
+} */
 
 /* ****************************************** */
 /* MEDIA QUERIES */
@@ -90,8 +108,8 @@
   }
 }
 
-@media ( min-width: 501px ) {
+/* @media ( min-width: 501px ) {
   .container-links, .container-links-footer {
     display: none;
   }
-} 
+}  */
