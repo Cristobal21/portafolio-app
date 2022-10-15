@@ -8,15 +8,35 @@
   height: auto;
 }
 
-.card-1 {
+.card-info {
   width: 100%;
   margin: inherit;
+  background-color: #0F1F35;
+  border-style: none;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
 }
 
-.card-2 {
-  width: 100%;
-  height: inherit;
-  margin: inherit;
+.cardHeader-info {
+  font-family: sans-serif;
+  src: url('../../fonts/FilsonProBold.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.cardBody-info {
+  font-family: sans-serif;
+  src: url('../../fonts/FilsonProLight.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.item-list {
+  background-color: #0F1F35;
+  /* background-color: #1A3047; */
+  color: #FFFFFF !important;
 }
 
 .list-item {
@@ -34,37 +54,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 303px;
 }
 
 .col-img img {
-  height: 100%;
-  width: 100%;
-  padding: 0px;
+  height: auto;
+  width: 300px;
 }
 
 .col-img img:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .card-img {
-  width: 100%;
+  width: auto;
   border-radius: 7px;
-  height: 100%;
+  height: auto;
   margin: inherit;
+  background-color: #1A3047;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
 }
 
 .card-body-img {
   text-align: center;
-}
-
-/****************************/
-
-.col-perfil {
-  padding: 0;
-  margin: 0;
-}
-
-.card-body-perfil {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  font-family: sans-serif;
+  src: url('../../fonts/FilsonProLight.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }

@@ -1,16 +1,13 @@
 .container-home {
   height: 100vh;
-  margin: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow-y: hidden;
 }
 
 .header-home {
-  --animate-duration: 2s;
   text-align: center;
   font-family: 'Major Mono Display', monospace;
   font-style: regular;
@@ -22,7 +19,7 @@
 }
 
 .header-home h3 {
-  font-size: clamp(20px, 8vw, 60px);
+  font-size: clamp(10px, 6vw, 60px);
   color: #909192;
 }
 

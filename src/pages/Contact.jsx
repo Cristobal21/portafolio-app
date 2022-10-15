@@ -6,9 +6,9 @@ import './css/contact.css'
 export const Contact = () => {
   return (
     <Container className="container-contact" id="contact">
-      <Row className="mt-5 row-header animate__animated animate__zoomIn animate__delay-0.5s animate__duration-1s">
+      <Row className="mt-5 row-header">
         <header>
-          <h1>Contáctame</h1>
+          <h1>contáctame</h1>
         </header>
         <hr />
       </Row>

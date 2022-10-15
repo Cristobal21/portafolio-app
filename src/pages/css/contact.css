@@ -34,6 +34,10 @@
   padding: 2rem;
   background-color: transparent;
   width: 600px;
+  font-family: sans-serif;
+  src: url('../../fonts/FilsonProLight.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
 
 .alerta-error {
@@ -46,21 +50,28 @@
 .button-submit-contact {
   background-color: transparent;
   text-decoration: none;
-  color: #64ffda;
-  border: 1px solid #64ffda;
+  color: #00FFFF;
+  border: 1px solid #00FFFF;
   text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: 'Cutive Mono', monospace;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .button-submit-contact:hover {
-  background-color: rgba(100, 255, 218, 0.1);
-  color: #64ffda;
-  border: 1px solid #64ffda;
+  transition-duration: 0.5s;
+  background-color: #FF0080;
+  color: #FFFFFF;
+  border: 1px solid #FF0080;
 }
 
 .button-submit-contact:focus {
   background-color: rgba(100, 255, 219, 0.041);
-  color: #64ffda;
-  border: 1px solid #64ffda;
+  color: #03CED3;
+  border: 1px solid #03CED3;
 }
 
 textarea {
@@ -73,32 +84,12 @@ textarea {
 }
 
 
-/* SocialMediaNetwork component */
-.card-body-contact {
-  padding: 3px;
-  height: 5rem;
-  width: 5rem;
-  transition: .4s;
-}
-
-.card-body-contact:hover {
-  opacity: 0.9;
-  transform: scale(0.9);
-}
-
-.card-social-icon {
-  width: 5rem;
-  display: flex;
-  align-items: center;
-}
-
-
-
-
-
 /* Media queries */
-@media (max-width: 500px) {
+@media (max-width: 575px) {
   .formulario {
     width: 90%;
+  }
+  .container-contact {
+    margin-top: 10rem;
   }
 }

@@ -15,7 +15,7 @@ export const ButtonDownloadCV = () => {
 
   return (
     <>
-      <div className="container-buttonCV mt-5 animate__animated animate__fadeInUp animate__delay-1s">
+      <div className="container-buttonCV mt-5 animate__animated animate__zoomIn animate__delay-1s">
         <a
           className="btn button-cv"
           href="https://drive.google.com/file/d/1SUwCFywUErZEHlTlyi9tKkr9qvtfNkNc/view?usp=sharing"
