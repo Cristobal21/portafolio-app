@@ -27,7 +27,7 @@ export const About = () => {
     img.style.transform = 'scale(1.0)'
   }
 
-  
+
 
   return (
     <Container className="container-about" id="about">
@@ -38,9 +38,9 @@ export const About = () => {
         <hr />
       </Row>
       <Row className="row-text">
-        <Col sm={12}  lg={6} xl={6} className="col-text">
+        <Col sm={12} lg={6} xl={6} className="col-text">
           <Card border="dark" className="card-info" onMouseEnter={enterCardInfo} onMouseLeave={leaveCardInfo}>
-            <Card.Header className="cardHeader-info"><AiFillCaretRight/>Un poco sobre mí</Card.Header>
+            <Card.Header className="cardHeader-info"><AiFillCaretRight />Un poco sobre mí</Card.Header>
             <Card.Body className="cardBody-info">
               <ListGroup className="list-group-flush item-group">
                 <ListGroup.Item className="list-item item-list">Nacido y criado en Chile desde 1995, hasta la fecha.</ListGroup.Item>
@@ -63,7 +63,7 @@ export const About = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col sm={12}  lg={6} xl={4} className="col-img">
+        <Col sm={12} lg={6} xl={4} className="col-img">
           <Card border="dark" className="card-img" onMouseEnter={enterCardImg} onMouseLeave={leaveCardImg} style={{ width: '100%' }}>
             <Card.Img variant="top" src={cristobal} alt="Cristobal-Valderrama" />
             <Card.Body className="card-body-img">

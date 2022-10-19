@@ -10,22 +10,22 @@ const App = () => {
       <Navigation />
       <Container className='container-pages'>
         <Row className="rows-pages">
-          <Home />
+        <Home />
         </Row>
         <Row className="rows-pages">
-          <About />
+        <About />
         </Row>
         <Row className="rows-pages">
-          <Skills />
+        <Skills />
         </Row>
         <Row className="rows-pages">
-          <Courses />
+        <Courses />
         </Row>
         <Row className="rows-pages">
-          <Projects />
+        <Projects />
         </Row>
         <Row className="rows-pages">
-          <Contact />
+        <Contact />
         </Row>
       </Container>
     </>

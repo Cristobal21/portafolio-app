@@ -11,7 +11,8 @@
 .card-info {
   width: 100%;
   margin: inherit;
-  background-color: #0F1F35;
+  /* background-color: #0F1F35; */
+  background-color: #0A2D41;
   border-style: none;
   color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
@@ -34,8 +35,8 @@
 }
 
 .item-list {
-  background-color: #0F1F35;
-  /* background-color: #1A3047; */
+  /* background-color: #0F1F35; */
+  background-color: #0A2D41;
   color: #FFFFFF !important;
 }
 
@@ -71,7 +72,8 @@
   border-radius: 7px;
   height: auto;
   margin: inherit;
-  background-color: #1A3047;
+  /* background-color: #1A3047; */
+  background-color: #0A2D41;
   color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);

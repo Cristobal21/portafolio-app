@@ -23,9 +23,8 @@ export const ButtonDownloadCV = () => {
           onMouseEnter={enterHr}
           onMouseLeave={leaveHr}
         >
-          Descargar Currículum <FiDownload/>
-        </a> 
-        <hr />
+          Descargar Currículum <FiDownload />
+        </a>
       </div>
     </>
   )

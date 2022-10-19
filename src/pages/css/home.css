@@ -16,16 +16,19 @@
 .header-home h1 {
   font-size: clamp(30px, 8vw, 80px);
   color: #FFFFFF;
+  animation-duration: 2s;
 }
 
 .header-home h3 {
   font-size: clamp(10px, 6vw, 60px);
   color: #909192;
+  animation-duration: 2s;
 }
 
 .rectangle-home {
   border: 1px solid #00FFFF;
   padding: 1rem;
   transform: rotate(45deg);
-  margin-top: 35px;
+  margin-top: 25px;
 }
+

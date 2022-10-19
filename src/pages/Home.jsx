@@ -8,16 +8,29 @@ export const Home = () => {
     <Container className="container-home" id="home">
       <Row>
         <header className="header-home">
-          <h1 className="animate__animated animate__fadeInUp animate__delay-0.5s">cristobal</h1>
-          <h1 className="animate__animated animate__fadeInUp animate__delay-0.5s">Valderrama</h1>
-          <h3 className="animate__animated animate__fadeInUp animate__delay-1s">desarrollador Web</h3>
+          <h1 className="animate__animated animate__fadeInLeft animate__delay-0.5s">cristobal</h1>
+          <h1 className="animate__animated animate__fadeInRight animate__delay-0.5s">Valderrama</h1>
+          <h3 className="animate__animated animate__fadeInUp animate__delay-0.5s">desarrollador Web</h3>
         </header>
       </Row>
-      <div className="rectangle-home animate__animated animate__zoomIn animate__delay-1s animate__duration-2s"></div>
+      <div>
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div >
+      <div className="rectangle-home animate__animated animate__zoomIn animate__delay-1s"></div>
       <Row>
         <ButtonDownloadCV />
       </Row>
-      <hr />
     </Container>
   )
 }
