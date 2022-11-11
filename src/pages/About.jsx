@@ -1,11 +1,15 @@
+import { useState } from "react"
 import { Container, Row, Card, Col, ListGroup } from "react-bootstrap"
 import { AiFillCaretRight } from 'react-icons/ai'
-import cristobal from '../assets/cris.png'
+import cris1 from '../assets/cris-1.png'
+import cris2 from '../assets/cris-2.png'
 import './css/info.css'
 import './css/about.css'
 
 
 export const About = () => {
+
+  const [imgState, setImgState] = useState(false)
 
   const enterCardInfo = () => {
     const info = document.querySelector('.card-info')
@@ -21,10 +25,12 @@ export const About = () => {
     const img = document.querySelector('.card-img')
     img.style.transform = 'scale(1.02)'
     img.style.transition = '0.8s'
+    setImgState(true)
   }
   const leaveCardImg = () => {
     const img = document.querySelector('.card-img')
     img.style.transform = 'scale(1.0)'
+    setImgState(false)
   }
 
 
@@ -65,10 +71,7 @@ export const About = () => {
         </Col>
         <Col sm={12} lg={6} xl={4} className="col-img">
           <Card border="dark" className="card-img" onMouseEnter={enterCardImg} onMouseLeave={leaveCardImg} style={{ width: '100%' }}>
-            <Card.Img variant="top" src={cristobal} alt="Cristobal-Valderrama" />
-            <Card.Body className="card-body-img">
-              <Card.Text>Este soy yo ✌</Card.Text>
-            </Card.Body>
+            {!imgState ? <Card.Img variant="top" src={cris2} alt="Cristobal-Valderrama"/> : <Card.Img variant="top" src={cris1} alt="Cristobal-Valderrama"/>}
           </Card>
         </Col>
       </Row>
