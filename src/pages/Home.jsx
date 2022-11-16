@@ -8,8 +8,8 @@ export const Home = () => {
     <Container className="container-home" id="home">
       <Row>
         <header className="header-home">
-          <h1 className="animate__animated animate__fadeInLeft animate__delay-0.5s">cristobal</h1>
-          <h1 className="animate__animated animate__fadeInRight animate__delay-0.5s">Valderrama</h1>
+          <h1 className="animate__animated animate__fadeInDown animate__delay-0.5s">cristobal</h1>
+          <h1 className="animate__animated animate__fadeInDown animate__delay-0.5s">Valderrama</h1>
           <h3 className="animate__animated animate__fadeInUp animate__delay-0.5s">desarrollador Web</h3>
         </header>
       </Row>

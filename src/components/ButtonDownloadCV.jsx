@@ -1,5 +1,6 @@
 import { FiDownload } from 'react-icons/fi'
 import './css/buttonCV.css'
+import cv from '../assets/CV_Cristobal_Valderrama_sf.pdf'
 
 export const ButtonDownloadCV = () => {
 
@@ -18,8 +19,10 @@ export const ButtonDownloadCV = () => {
       <div className="container-buttonCV mt-5 animate__animated animate__zoomIn animate__delay-1s">
         <a
           className="btn button-cv"
-          href="https://drive.google.com/file/d/1SUwCFywUErZEHlTlyi9tKkr9qvtfNkNc/view?usp=sharing"
+          href={cv}
           target="_blank"
+          rel="noopener noreferrer"
+          download="Cristobal-Valderrama"
           onMouseEnter={enterHr}
           onMouseLeave={leaveHr}
         >
