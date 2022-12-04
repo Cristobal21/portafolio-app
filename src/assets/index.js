@@ -44,3 +44,7 @@ export { default as react5 } from '../assets/react-5.svg'
 
 export { default as lkdin1 } from '../assets/lkdin1.svg'
 export { default as lkdin2 } from '../assets/lkdin2.svg'
+
+
+export { default as app_portafolio } from "../assets/portafolio.png"
+export { default as app_clima } from "../assets/captura-clima.png"

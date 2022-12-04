@@ -6,6 +6,7 @@
   align-items: center;
   padding-left: 16px;
   padding-right: 16px;
+  margin-top: 7rem;
 }
 
 .rows-projects {
@@ -16,35 +17,56 @@
   row-gap: 1rem;
 }
 
-.col-project {
-  padding: 10;
+.div-project {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
-.col-project a {
+.div-project a {
   text-decoration: none;
   color: #eee;
 }
 
 .card-project {
-  width: 350px;
+  width: 330px;
   border: 2px solid #0A2D41;
   background-color: #0A2D41;
 
-  
+  /* transform: translateZ(-130px);
+	transition: transform 350ms; */
 }
 
 .card-project:hover {
   transform: translateY(-6px);
   transition: .8s;
-  cursor: pointer;
   border-color: #FF0080;
   /* border-color: #EDFF00; */
   /* border-color: #00FFFF; */
+
+}
+
+.card-project-pending {
+  width: 330px;
+  border: 2px solid #0A2D41;
+  background-color: #0A2D41;
+}
+
+.card-project-pending:hover {
+  transform: translateY(-6px);
+  transition: .8s;
+  border-color: #00FFFF;
 }
 
 .cardHeader-project {
   text-decoration: none;
   text-align: center;
+  color: #ffffff;
+  font-family: filson-pro, sans-serif;
+  src: url("../../fonts/FilsonProBold.otf");
+  font-style: normal;
+  font-weight: 100;
 }
 
 .img-project {
@@ -57,26 +79,53 @@
 .cardText-project {
   font-size: medium;
   text-align: center;
+  color: #eee;
+  font-family: filson-pro, sans-serif;
+  src: url("../../fonts/FilsonProLight.otf");
+  font-style: normal;
+  font-weight: 100;
 }
 
 .cardFooter-project {
-  color: #ffffff;
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;                              
 }
 
 .cardFooter-project:hover {
-  color: #ffffff;
-  /* border: 1px solid #FF0080; */
   background-color: #0A2D41;
 }
 
-.cardFooter-project img {
-  height: 30px;
-  width: auto;
+.cardTextFooter-project {
+  color: #8892b0;
+  font-size: larger;
 }
 
+.cardTextFooter-project:hover {
+  color: #eee;
+}
+
+.imgFooter-project {
+  height: 30px;
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.listgroup-project .list-group-item {
+  background-color: #0A2D41;
+  color: #eee;
+  font-size: smaller;
+  font-family: filson-pro, sans-serif;
+  src: url("../../fonts/FilsonProLight.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+.listgroup-project .list-group-item:hover {
+  background-color: #143b52d0;
+}
 
 /* Media Queries */
 @media (max-width: 575px) {
