@@ -1,135 +1,129 @@
 .container-projects {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 7rem;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-top: 7rem;
 }
 
 .rows-projects {
-  padding-left: 12px;
-  padding-right: 12px;
-  display: flex;
-  justify-content: center;
-  row-gap: 1rem;
+	padding-left: 12px;
+	padding-right: 12px;
+	display: flex;
+	justify-content: center;
+	row-gap: 1rem;
 }
 
 .div-project {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
 }
 
 .div-project a {
-  text-decoration: none;
-  color: #eee;
+	text-decoration: none;
+	color: #eee;
 }
 
 .card-project {
-  width: 330px;
-  border: 2px solid #0A2D41;
-  background-color: #0A2D41;
-
-  /* transform: translateZ(-130px);
-	transition: transform 350ms; */
+	width: 330px;
+	border: 2px solid #0a2d41;
+	background-color: #0a2d41;
 }
 
 .card-project:hover {
-  transform: translateY(-6px);
-  transition: .8s;
-  border-color: #FF0080;
-  /* border-color: #EDFF00; */
-  /* border-color: #00FFFF; */
-
+	transform: translateY(-6px);
+	transition: 0.6s;
+	border-color: #ff0080;
 }
 
 .card-project-pending {
-  width: 330px;
-  border: 2px solid #0A2D41;
-  background-color: #0A2D41;
+	width: 330px;
+	border: 2px solid #0a2d41;
+	background-color: #0a2d41;
 }
 
 .card-project-pending:hover {
-  transform: translateY(-6px);
-  transition: .8s;
-  border-color: #00FFFF;
+	transform: translateY(-6px);
+	transition: 0.6s;
+	border-color: #00ffff;
 }
 
 .cardHeader-project {
-  text-decoration: none;
-  text-align: center;
-  color: #ffffff;
-  font-family: filson-pro, sans-serif;
-  src: url("../../fonts/FilsonProBold.otf");
-  font-style: normal;
-  font-weight: 100;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	font-family: filson-pro, sans-serif;
+	src: url("../../fonts/FilsonProBold.otf");
+	font-style: normal;
+	font-weight: 100;
 }
 
 .img-project {
-  max-height: 100%;
-  width: auto;
-  padding-left: 2.7rem;
-  padding-right: 2.7rem;
+	max-height: 100%;
+	width: auto;
+	padding-left: 2.7rem;
+	padding-right: 2.7rem;
 }
 
 .cardText-project {
-  font-size: medium;
-  text-align: center;
-  color: #eee;
-  font-family: filson-pro, sans-serif;
-  src: url("../../fonts/FilsonProLight.otf");
-  font-style: normal;
-  font-weight: 100;
+	font-size: medium;
+	text-align: center;
+	color: #eee;
+	font-family: filson-pro, sans-serif;
+	src: url("../../fonts/FilsonProLight.otf");
+	font-style: normal;
+	font-weight: 100;
 }
 
 .cardFooter-project {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;                              
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
 }
 
 .cardFooter-project:hover {
-  background-color: #0A2D41;
+	background-color: #0a2d41;
 }
 
 .cardTextFooter-project {
-  color: #8892b0;
-  font-size: larger;
+	color: #8892b0;
+	font-size: larger;
 }
 
 .cardTextFooter-project:hover {
-  color: #eee;
+	color: #eee;
 }
 
 .imgFooter-project {
-  height: 30px;
-  width: 30px;
-  margin-right: 1rem;
+	height: 30px;
+	width: 30px;
+	margin-right: 1rem;
 }
 
 .listgroup-project .list-group-item {
-  background-color: #0A2D41;
-  color: #eee;
-  font-size: smaller;
-  font-family: filson-pro, sans-serif;
-  src: url("../../fonts/FilsonProLight.otf");
-  font-style: normal;
-  font-weight: 100;
+	background-color: #0a2d41;
+	color: #eee;
+	font-size: smaller;
+	font-family: filson-pro, sans-serif;
+	src: url("../../fonts/FilsonProLight.otf");
+	font-style: normal;
+	font-weight: 100;
 }
 
 .listgroup-project .list-group-item:hover {
-  background-color: #143b52d0;
+	background-color: #143b52d0;
 }
 
 /* Media Queries */
 @media (max-width: 575px) {
-  .container-projects {
-    margin-top: 20rem;
-  }
+	.container-projects {
+		margin-top: 20rem;
+	}
 }

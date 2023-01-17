@@ -4,48 +4,26 @@ import { AiFillCaretRight } from "react-icons/ai"
 import * as imgs from "../assets"
 import "./css/info.css"
 import "./css/about.css"
+import { HeaderTitle } from "../components/HeaderTitle"
 
 export const About = () => {
 	const [imgState, setImgState] = useState(false)
 
-	const enterCardInfo = () => {
-		const info = document.querySelector(".card-info")
-		info.style.transform = "scale(1.02)"
-		info.style.transition = "0.8s"
-	}
-	const leaveCardInfo = () => {
-		const info = document.querySelector(".card-info")
-		info.style.transform = "scale(1.0)"
-	}
-
 	const enterCardImg = () => {
-		const img = document.querySelector(".card-img")
-		img.style.transform = "scale(1.02)"
-		img.style.transition = "0.8s"
 		setImgState(true)
 	}
 	const leaveCardImg = () => {
-		const img = document.querySelector(".card-img")
-		img.style.transform = "scale(1.0)"
 		setImgState(false)
 	}
 
 	return (
 		<Container className="container-about" id="about">
 			<Row className="row-header">
-				<header>
-					<h1>¿quién es este tipo?</h1>
-				</header>
-				<hr />
+				<HeaderTitle title="¿quién es este tipo?" />
 			</Row>
 			<Row className="row-text">
 				<Col sm={12} lg={6} xl={6} className="col-text">
-					<Card
-						border="dark"
-						className="card-info"
-						onMouseEnter={enterCardInfo}
-						onMouseLeave={leaveCardInfo}
-					>
+					<Card border="dark" className="card-info">
 						<Card.Header className="cardHeader-info">
 							<AiFillCaretRight />
 							Un poco sobre mí
@@ -74,11 +52,9 @@ export const About = () => {
 								</ListGroup.Item>
 								<ListGroup.Item className="list-item item-list">
 									Creo firmemente en la idea de que todos deberíamos saber
-									programar, ya que ser desarrollador web, es una de las mejores
+									programar, ya que el desarrollo web, es una de las mejores
 									cosas del mundo.
 								</ListGroup.Item>
-								{/* <ListGroup.Item className="list-item item-list">Creo firmemente en la idea de que todos deberíamos saber programar, ya que ser desarrollador web, es una de las mejores cosas del mundo.
-                Es por eso que me fascina la idea de poder crear contenido web que sea de facil acceso y uso para todo tipo de personas de todas las edades posibles, con la esperanza de poder generar motivación en los demás y así despertar su interés por la programación.</ListGroup.Item> */}
 							</ListGroup>
 						</Card.Body>
 					</Card>
@@ -89,20 +65,12 @@ export const About = () => {
 						className="card-img"
 						onMouseEnter={enterCardImg}
 						onMouseLeave={leaveCardImg}
-						style={{ width: "100%" }}
+						// style={{ width: "100%" }}
 					>
 						{!imgState ? (
-							<Card.Img
-								variant="top"
-								src={imgs.cristobal}
-								alt="Cristobal-Valderrama"
-							/>
+							<Card.Img src={imgs.cristobal} alt="Cristobal-Valderrama" />
 						) : (
-							<Card.Img
-								variant="top"
-								src={imgs.cristobal_hover}
-								alt="Cristobal-Valderrama"
-							/>
+							<Card.Img src={imgs.cristobal_hover} alt="Cristobal-Valderrama" />
 						)}
 					</Card>
 				</Col>

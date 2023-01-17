@@ -1,95 +1,130 @@
-import { Card, Col, Container, Row } from "react-bootstrap"
-import * as imgs from '../assets'
+import { Col, Container, Row } from "react-bootstrap"
+import * as imgs from "../assets"
+import { HeaderTitle } from "../components"
+import { CardSkill } from "../components/CardSkill"
 import { getSkills } from "../helpers/getSkills"
 
-import './css/skills.css'
-
+import "./css/skills.css"
 
 export const Skills = () => {
+	const {
+		htmlSt,
+		reactSt,
+		cssSt,
+		gitSt,
+		nodeSt,
+		javascriptSt,
+		bstrapSt,
+		twSt,
+		mongoSt,
+		enterHtml,
+		leaveHtml,
+		enterCss,
+		leaveCss,
+		enterGit,
+		leaveGit,
+		enterJs,
+		leaveJs,
+		enterReact,
+		leaveReact,
+		enterBs,
+		leaveBs,
+		enterNode,
+		leaveNode,
+		enterTw,
+		leaveTw,
+		enterMongo,
+		leaveMongo,
+	} = getSkills()
 
-  const {
-    htmlSt,
-    reactSt,
-    cssSt,
-    gitSt,
-    nodeSt,
-    javascriptSt,
-    bstrapSt,
-    enterHtml,
-    leaveHtml,
-    enterCss,
-    leaveCss,
-    enterGit,
-    leaveGit,
-    enterJs,
-    leaveJs,
-    enterReact,
-    leaveReact,
-    enterBs,
-    leaveBs,
-    enterNode,
-    leaveNode,
-  } = getSkills()
-
-  return (
-    <Container className="container-skills" id="skills">
-      <Row className="mt-5 row-header">
-        <header>
-          <h1>conocimientos recientes</h1>
-        </header>
-        <hr />
-      </Row>
-      <Row className="row-card-skill">
-        <Col className="col-skills">
-          <Card className="card-skill" id="html" onMouseEnter={enterHtml} onMouseLeave={leaveHtml}>
-            <a href="https://developer.mozilla.org/es/docs/Glossary/HTML5" target="_blank">
-              {!htmlSt ? <Card.Img variant="top" src={imgs.html1} /> : <Card.Img variant="top" id="imgSkill" src={imgs.html2} />}
-            </a>
-          </Card>
-        </Col>
-        <Col className="col-skills">
-          <Card className="card-skill" onMouseEnter={enterCss} onMouseLeave={leaveCss}>
-            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-              {!cssSt ? <Card.Img variant="top" src={imgs.css1} /> : <Card.Img variant="top" id="imgSkill" src={imgs.css2} />}
-            </a>
-          </Card>
-        </Col>
-        <Col className="col-skills">
-          <Card className="card-skill" onMouseEnter={enterGit} onMouseLeave={leaveGit}>
-            <a href="https://git-scm.com/" target="_blank">
-              {!gitSt ? <Card.Img variant="top" src={imgs.git1} /> : <Card.Img variant="top" id="imgSkill" src={imgs.git2} />}
-            </a>
-          </Card>
-        </Col>
-        <Col className="col-skills">
-          <Card className="card-skill" onMouseEnter={enterJs} onMouseLeave={leaveJs}>
-            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
-              {!javascriptSt ? <Card.Img variant="top" src={imgs.js1} /> : <Card.Img variant="top" id="imgSkill" src={imgs.js2} />}
-            </a>
-          </Card>
-        </Col>
-        <Col className="col-skills">
-          <Card className="card-skill" onMouseEnter={enterReact} onMouseLeave={leaveReact}>
-            <a href="https://reactjs.org/" target="_blank">
-              {!reactSt ? <Card.Img variant="top" src={imgs.react1} /> : <Card.Img variant="top" id="imgSkill" src={imgs.react2} />}
-            </a>
-          </Card>
-        </Col>
-        <Col className="col-skills">
-          <Card className="card-skill" onMouseEnter={enterBs} onMouseLeave={leaveBs}>
-            <a href="https://getbootstrap.com/" target="_blank">
-              {!bstrapSt ? <Card.Img variant="top" src={imgs.bs1} /> : <Card.Img variant="top" id="imgSkill" src={imgs.bs2} />}
-            </a>
-          </Card>
-        </Col>
-        <Col className="col-skills">
-          <Card className="card-skill" onMouseEnter={enterNode} onMouseLeave={leaveNode}>
-            <a href="https://nodejs.org/es/" target="_blank">
-              {!nodeSt ? <Card.Img variant="top" src={imgs.node1} /> : <Card.Img variant="top" id="imgSkill" src={imgs.node2} />}
-            </a>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
-  )
+	return (
+		<Container className="container-skills" id="skills">
+			<Row className="mt-5 row-header">
+				<HeaderTitle title="conocimientos recientes" />
+			</Row>
+			<Row className="row-card-skill">
+				<Col className="col-skills">
+					<CardSkill
+						link="https://developer.mozilla.org/es/docs/Glossary/HTML5"
+						img1={imgs.html1}
+						img2={imgs.html2}
+						enterSkill={enterHtml}
+						leaveSkill={leaveHtml}
+						stateSkill={htmlSt}
+					/>
+				</Col>
+				<Col className="col-skills">
+					<CardSkill
+						link="https://developer.mozilla.org/es/docs/Web/CSS"
+						img1={imgs.css1}
+						img2={imgs.css2}
+						enterSkill={enterCss}
+						leaveSkill={leaveCss}
+						stateSkill={cssSt}
+					/>
+				</Col>
+				<Col className="col-skills">
+					<CardSkill
+						link="https://git-scm.com/"
+						img1={imgs.git1}
+						img2={imgs.git2}
+						enterSkill={enterGit}
+						leaveSkill={leaveGit}
+						stateSkill={gitSt}
+					/>
+				</Col>
+				<Col className="col-skills">
+					<CardSkill
+						link="https://developer.mozilla.org/es/docs/Web/JavaScript"
+						img1={imgs.js1}
+						img2={imgs.js2}
+						enterSkill={enterJs}
+						leaveSkill={leaveJs}
+						stateSkill={javascriptSt}
+					/>
+				</Col>
+				<Col className="col-skills">
+					<CardSkill
+						link="https://reactjs.org/"
+						img1={imgs.react1}
+						img2={imgs.react2}
+						enterSkill={enterReact}
+						leaveSkill={leaveReact}
+						stateSkill={reactSt}
+					/>
+				</Col>
+				<Col className="col-skills">
+					<CardSkill
+						link="https://getbootstrap.com/"
+						img1={imgs.bs1}
+						img2={imgs.bs2}
+						enterSkill={enterBs}
+						leaveSkill={leaveBs}
+						stateSkill={bstrapSt}
+					/>
+				</Col>
+				<Col className="col-skills">
+					<CardSkill
+						link="https://nodejs.org/es/"
+						img1={imgs.node1}
+						img2={imgs.node2}
+						enterSkill={enterNode}
+						leaveSkill={leaveNode}
+						stateSkill={nodeSt}
+					/>
+				</Col>
+				<Col className="col-skills">
+					<CardSkill
+						link="https://tailwindcss.com/"
+						img1={imgs.tw1}
+						img2={imgs.tw2}
+						enterSkill={enterTw}
+						leaveSkill={leaveTw}
+						stateSkill={twSt}
+					/>
+				</Col>
+				//TODO agregar MongoDB como skill
+			</Row>
+		</Container>
+	)
 }

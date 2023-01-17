@@ -31,6 +31,7 @@ export { default as js5 } from "../assets/js-5.svg"
 
 export { default as node1 } from "../assets/node-1.svg"
 export { default as node2 } from "../assets/node2.svg"
+export { default as node3 } from "../assets/node-3.svg"
 export { default as node4 } from "../assets/node-4.svg"
 export { default as node5 } from "../assets/node-5.svg"
 
@@ -41,6 +42,10 @@ export { default as react3 } from "../assets/react-3.svg"
 export { default as react4 } from "../assets/react-4.svg"
 export { default as react5 } from "../assets/react-5.svg"
 
+export { default as tw1 } from "../assets/tailwind-1.svg"
+export { default as tw2 } from "../assets/tailwind2.svg"
+export { default as tw3 } from "../assets/tailwind-3.svg"
+
 export { default as lkdin1 } from "../assets/lkdin1.svg"
 export { default as lkdin2 } from "../assets/lkdin2.svg"
 
@@ -49,5 +54,7 @@ export { default as app_clima } from "../assets/captura-clima.png"
 
 export { default as app_portafolio1 } from "../assets/portafolio.webp"
 export { default as app_clima1 } from "../assets/captura-weather-app.webp"
+export { default as app_pedido1 } from "../assets/captura-pedido.webp"
+
 export { default as cristobal } from "../assets/cris-2.webp"
 export { default as cristobal_hover } from "../assets/cris-1.webp"
