@@ -33,6 +33,7 @@
 	width: 330px;
 	border: 2px solid #0a2d41;
 	background-color: #0a2d41;
+	transition: 0.6s;
 }
 
 .card-project:hover {
@@ -45,6 +46,7 @@
 	width: 330px;
 	border: 2px solid #0a2d41;
 	background-color: #0a2d41;
+	transition: 0.6s;
 }
 
 .card-project-pending:hover {

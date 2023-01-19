@@ -1,16 +1,17 @@
-import { Card, ListGroup } from "react-bootstrap"
+import { Button, Card, ListGroup } from "react-bootstrap"
 
 export const CardProjectSkill = ({
 	title,
 	handleApp,
 	imgs,
 	skill,
-	link,
 	classStyle,
+	link,
+	handleVisit,
 }) => {
-	const visitAppClima = (link) => {
-		window.open(link, "_blank", "noopener,noreferrer")
-	}
+	// const visitApp = (link) => {
+	// 	window.open(link, "_blank", "noopener,noreferrer")
+	// }
 
 	return (
 		<Card className={classStyle} onClick={handleApp}>
@@ -31,14 +32,15 @@ export const CardProjectSkill = ({
 					))}
 				</ListGroup>
 			</Card.Body>
-			<Card.Footer className="cardFooter-project">
+
+			{/* <Card.Footer className="cardFooter-project">
 				<Card.Text
 					className="cardTextFooter-project"
-					onClick={() => visitAppClima(link)}
+					onClick={() => visitApp(link)}
 				>
 					Visitar web
 				</Card.Text>
-			</Card.Footer>
+			</Card.Footer> */}
 		</Card>
 	)
 }

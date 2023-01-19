@@ -1,12 +1,15 @@
 import { useState } from "react"
-import { Container, Row } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
+import { Button, Container, Row } from "react-bootstrap"
 import * as imgs from "../assets"
 import { CardProject, HeaderTitle, CardProjectSkill } from "../components"
 import { getSkillProject } from "../helpers/getSkillProject"
 import "./css/projects.css"
+import { ButtonVisitApp } from "../components/ButtonVisitApp"
 
 export const Projects = () => {
+	const navigate = useNavigate()
+
 	const [showClima, setShowClima] = useState(true)
 	const [showDeli, setShowDeli] = useState(true)
 	const [showPort, setShowPort] = useState(true)
@@ -29,6 +32,10 @@ export const Projects = () => {
 		arrImgDeli,
 		nameSkillDeli,
 	} = getSkillProject()
+
+	// const visitApp = (link) => {
+	// 	window.open(link, "_blank", "noopener,noreferrer")
+	// }
 
 	return (
 		<Container className="container-projects" id="projects">
@@ -58,22 +65,29 @@ export const Projects = () => {
 				</div>
 				<div className="div-project">
 					{showClima ? (
-						<CardProject
-							title="Clima App"
-							description={`Buscador que rescata información básica de ciudades y clima actual de dichos lugares, usando dos APIs diferentes.`}
-							img={imgs.app_clima1}
-							handleApp={handleAppClima}
-							classStyle="card-project"
-						/>
+						<>
+							<CardProject
+								title="Clima App"
+								description={`Buscador que rescata información básica de ciudades y clima actual de dichos lugares, usando dos APIs diferentes.`}
+								img={imgs.app_clima1}
+								handleApp={handleAppClima}
+								classStyle="card-project"
+							/>
+							{/* <ButtonVisitApp
+								handleVisit={visitApp("https://weather-latino.netlify.app/")}
+								link="https://weather-latino.netlify.app/"
+							/> */}
+						</>
 					) : (
-						<CardProjectSkill
-							title="Tecnologías Aplicadas"
-							handleApp={handleAppClima}
-							imgs={arrImgClima}
-							skill={nameSkillClima}
-							classStyle="card-project"
-							link="https://weather-latino.netlify.app/"
-						/>
+						<>
+							<CardProjectSkill
+								title="Tecnologías Aplicadas"
+								handleApp={handleAppClima}
+								imgs={arrImgClima}
+								skill={nameSkillClima}
+								classStyle="card-project"
+							/>
+						</>
 					)}
 				</div>
 				<div className="div-project">

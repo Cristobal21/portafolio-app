@@ -1,0 +1,19 @@
+.btnVisit {
+	font-size: larger;
+	text-align: center;
+	background-color: #0a2d41;
+	border: 1px solid #0f1f35;
+	border-radius: 7px;
+	opacity: 0.7;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	transition: 0.6s;
+}
+
+.btnVisit:hover {
+	border-color: #ff0080;
+	color: #fff;
+	opacity: 1;
+	transform: scale(1.01);
+	transition: 0.6s;
+}
