@@ -123,7 +123,17 @@ export const Skills = () => {
 						stateSkill={twSt}
 					/>
 				</Col>
-				//TODO agregar MongoDB como skill
+				<Col className="col-skills">
+					<CardSkill
+						link="https://www.mongodb.com/"
+						img1={imgs.mongo3}
+						img2={imgs.mongo2}
+						enterSkill={enterMongo}
+						leaveSkill={leaveMongo}
+						stateSkill={mongoSt}
+					/>
+				</Col>
+				//TODO agregar img de mongo que falta
 			</Row>
 		</Container>
 	)

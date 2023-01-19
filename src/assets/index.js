@@ -46,6 +46,9 @@ export { default as tw1 } from "../assets/tailwind-1.svg"
 export { default as tw2 } from "../assets/tailwind2.svg"
 export { default as tw3 } from "../assets/tailwind-3.svg"
 
+export { default as mongo2 } from "../assets/mongo-2.svg"
+export { default as mongo3 } from "../assets/mongo-3.svg"
+
 export { default as lkdin1 } from "../assets/lkdin1.svg"
 export { default as lkdin2 } from "../assets/lkdin2.svg"
 

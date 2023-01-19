@@ -10,7 +10,7 @@ export const getSkillProject = () => {
 	const arrImgDeli = [
 		imgs.html3,
 		imgs.js3,
-		imgs.js5,
+		imgs.mongo3,
 		imgs.node3,
 		imgs.react3,
 		imgs.tw3,

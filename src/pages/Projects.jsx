@@ -1,15 +1,11 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
-import { Button, Container, Row } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import * as imgs from "../assets"
 import { CardProject, HeaderTitle, CardProjectSkill } from "../components"
 import { getSkillProject } from "../helpers/getSkillProject"
 import "./css/projects.css"
-import { ButtonVisitApp } from "../components/ButtonVisitApp"
 
 export const Projects = () => {
-	const navigate = useNavigate()
-
 	const [showClima, setShowClima] = useState(true)
 	const [showDeli, setShowDeli] = useState(true)
 	const [showPort, setShowPort] = useState(true)
@@ -73,10 +69,6 @@ export const Projects = () => {
 								handleApp={handleAppClima}
 								classStyle="card-project"
 							/>
-							{/* <ButtonVisitApp
-								handleVisit={visitApp("https://weather-latino.netlify.app/")}
-								link="https://weather-latino.netlify.app/"
-							/> */}
 						</>
 					) : (
 						<>
@@ -86,7 +78,12 @@ export const Projects = () => {
 								imgs={arrImgClima}
 								skill={nameSkillClima}
 								classStyle="card-project"
+								link="https://weather-latino.netlify.app/"
 							/>
+							{/* <ButtonVisitApp
+									handleVisit={visitApp("https://weather-latino.netlify.app/")}
+									link="https://weather-latino.netlify.app/"
+								/> */}
 						</>
 					)}
 				</div>

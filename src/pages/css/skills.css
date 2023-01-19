@@ -23,7 +23,7 @@
 	/* animation: pulse;
   animation-duration: 1s; */
 	transform: scale(1.4);
-	transition: 0.8s;
+	transition: 0.4s;
 }
 
 .row-card-skill {
