@@ -1,6 +1,6 @@
 import { FiDownload } from "react-icons/fi"
 import "./css/buttonCV.css"
-import cv from "../assets/CV_Cristobal_Valderrama_sf.pdf"
+import cv from "../assets/Cristobal-Valderrama.pdf"
 
 export const ButtonDownloadCV = () => {
   const enterHr = () => {
