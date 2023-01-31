@@ -123,6 +123,20 @@
 	background-color: #143b52d0;
 }
 
+.txtEnDesarrollo {
+	text-align: center;
+}
+
+.txtVerApp {
+	color: #8892b0;
+	font-size: larger;
+	text-decoration: none;
+	text-align: center;
+}
+.txtVerApp:hover {
+	color: #ffffff;
+}
+
 /* Media Queries */
 @media (max-width: 575px) {
 	.container-projects {
