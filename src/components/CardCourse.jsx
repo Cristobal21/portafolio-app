@@ -33,11 +33,9 @@ export const CardCourse = ({
           {credential}
         </Card.Text>
       </Card.Body>
-      <Card.Footer className='cardFooterCourse'>
-        <Card.Link href={link} target='_blank' className='cardCourseLink'>
-          Verificar Credencial
-        </Card.Link>
-      </Card.Footer>
+      <Card.Link href={link} target='_blank' className='cardCourseLink'>
+        Verificar Credencial
+      </Card.Link>
     </Card>
   )
 }

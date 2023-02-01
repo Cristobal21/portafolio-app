@@ -60,27 +60,27 @@
 	font-weight: normal;
 }
 
-.cardFooterCourse {
-	text-align: center;
-	font-family: sans-serif;
-	src: url("../../fonts/FilsonProLight.otf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
 
-.cardFooterCourse a {
+
+.cardCourseLink {
+	background-color: #0a2d41;
 	color: #00ffff;
 	text-decoration: none;
-}
-
-.cardFooterCourse:hover {
-	background-color: #ff0080;
-	transition: ease-in-out 0.2s;
-	width: auto;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: larger;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	src: url("../../fonts/FilsonProLight.otf") format("truetype");
+	text-align: center;
+	transition: ease-in 0.4s;
 }
 
 .cardCourseLink:hover {
 	color: #ffffff;
+	background-color: #ff0080;
+	transition: ease-in 0.4s;
 }
 
 /* Media Queries */

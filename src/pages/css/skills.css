@@ -14,16 +14,20 @@
 }
 
 .card-skill {
-	width: 8rem;
+	width: 5rem;
 	background-color: transparent;
 	border: none;
 }
 
+img {
+	width: 7rem;
+	height: auto;
+	transition: 0.7s;
+}
+
 .imgSkill {
-	/* animation: pulse;
-  animation-duration: 1s; */
-	transform: scale(1.4);
-	transition: 0.4s;
+	transform: scale(1.5);
+	transition: 0.5s;
 }
 
 .row-card-skill {
@@ -31,15 +35,11 @@
 	justify-content: center;
 	text-align: center;
 	width: auto;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
 	row-gap: 2rem;
 }
 
-img {
-	width: 8rem;
-	height: 7rem;
-}
 
 /* Media Queries */
 @media (max-width: 575px) {
