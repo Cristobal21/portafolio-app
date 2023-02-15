@@ -79,13 +79,13 @@ const Navigation = () => {
                 >
                   Contacto
                 </Link>
-                <Link
-                  reloadDocument
+                <a
+                  target='_blank'
                   className={`nav7 animate__animated animate__fadeInDown nav-link`}
-                  to='https://www.linkedin.com/in/crist%C3%B3bal-valderrama-contreras-176275100/'
+                  href='https://www.linkedin.com/in/crist%C3%B3bal-valderrama-contreras-176275100/'
                 >
                   LinkedIn
-                </Link>
+                </a>
               </Nav>
               <Card
                 className='card-lkdin'
