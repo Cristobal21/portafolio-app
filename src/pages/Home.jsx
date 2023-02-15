@@ -8,7 +8,7 @@ export const Home = () => {
       <Row>
         <header className='header-home'>
           <h1 className='animate__animated animate__fadeInDown animate__delay-0.5s'>
-            cristobal
+            cristóbal
           </h1>
           <h1 className='animate__animated animate__fadeInDown animate__delay-0.5s'>
             Valderrama
