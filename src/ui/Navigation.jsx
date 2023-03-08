@@ -60,17 +60,17 @@ const Navigation = () => {
                 </Link>
                 <Link
                   reloadDocument
-                  className={`nav4 animate__animated animate__fadeInDown nav-link`}
-                  to='#courses'
-                >
-                  Cursos
-                </Link>
-                <Link
-                  reloadDocument
                   className={`nav5 animate__animated animate__fadeInDown nav-link`}
                   to='#skills'
                 >
                   Conocimientos
+                </Link>
+                <Link
+                  reloadDocument
+                  className={`nav4 animate__animated animate__fadeInDown nav-link`}
+                  to='#courses'
+                >
+                  Cursos
                 </Link>
                 <Link
                   reloadDocument

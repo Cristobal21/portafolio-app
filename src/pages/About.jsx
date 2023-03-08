@@ -34,8 +34,8 @@ export const About = () => {
                   Nacido y criado en Chile desde 1995, hasta la fecha.
                 </ListGroup.Item>
                 <ListGroup.Item className='list-item item-list'>
-                  El 2018 me titulé de la carrera Analista Programador
-                  Computacional, pero fue a inicios del año 2022 que mi interés
+                  Estoy titulado de Analista Programador
+                  Computacional, por consiguiente, fue que mi interés
                   y pasión por el desarrollo web comenzó.
                 </ListGroup.Item>
                 <ListGroup.Item className='list-item item-list'>
